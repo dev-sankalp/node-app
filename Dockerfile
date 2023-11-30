@@ -1,6 +1,6 @@
 FROM node 
 RUN useradd -ms /bin/bash sankalp
-RUN mkdir app && chown -R sankalp:sankalp /app && chown -R sankalp:sankalp
+RUN mkdir app && chown -R sankalp:sankalp /app
 ENV HOME /home/sankalp
 USER sankalp
 WORKDIR /app
